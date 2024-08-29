@@ -1,7 +1,7 @@
 import LogoutButton from "@/components/buttons/LogoutButton";
 import { getServerSession } from "next-auth";
 
-export default async function Protected() {
+export default async function PlayGround() {
   const session = await getServerSession();
 
   return (

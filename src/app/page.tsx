@@ -7,7 +7,7 @@ import GithubButton from "@/components/buttons/GithubButton";
 export default async function Home() {
   const session = (await getServerSession()) || {};
   if (Object.keys(session).length !== 0) {
-    redirect("/protected");
+    redirect("/playground");
   }
 
   return (

@@ -21,7 +21,7 @@ const handler = NextAuth({
       return true;
     },
     async redirect({ baseUrl }) {
-      return `${baseUrl}/protected`;
+      return `${baseUrl}/playground`;
     },
     async session({ session, token }) {
       if (session.user?.name) session.user.name = token.name;
